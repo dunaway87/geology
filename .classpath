@@ -5,6 +5,8 @@
 	
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="c:\play1-1.2.7.2\framework\play-1.2.7.2.jar" sourcepath="C:/play1-1.2.7.2/framework/src" />
+	<classpathentry kind="lib" path="C:\projects\geology\lib\antlr-runtime-3.3.jar"/>
+	<classpathentry kind="lib" path="C:\projects\geology\lib\stringtemplate-4.0.2.jar" sourcepath="C:\Users\Jonhmarc\.ivy2\cache\org.antlr\stringtemplate\sources\stringtemplate-4.0.2-sources.jar"/>
 	<classpathentry kind="lib" path="c:\play1-1.2.7.2\framework\lib\activation-1.1.1.jar"/>
 	<classpathentry kind="lib" path="c:\play1-1.2.7.2\framework\lib\antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="c:\play1-1.2.7.2\framework\lib\asm-all-3.3.1.jar"/>
