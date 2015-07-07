@@ -23,7 +23,6 @@ import java.sql.SQLException;
 import java.util.*;
 
 
-import org.jdom.adapters.CrimsonDOMAdapter;
 
 import myNeighborhood.DistanceFinder;
 import myNeighborhood.MyNeighborhood;
@@ -98,12 +97,12 @@ public class Application extends Controller {
 		renderText(Layers.getLayers());
 	}
 
-	public static void getLayersGeoserver() throws MalformedURLException, SQLException{
+/*	public static void getLayersGeoserver() throws MalformedURLException, SQLException{
 		String layers = Layers.getLayersGeoserver();
 		Logger.info(layers.toString());
 		renderText(layers);
 	}
-
+*/
 	public static void onClick(int epsg, String bbox, int x, int y, int height, int width, String layers, boolean getGeom){
 		bbox = fixBBox(bbox);
 		Logger.info("bbox %s", bbox);

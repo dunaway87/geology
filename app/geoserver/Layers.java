@@ -12,8 +12,6 @@ import java.util.Set;
 import play.Logger;
 import play.Play;
 import utils.DatabaseConnection;
-import it.geosolutions.geoserver.rest.GeoServerRESTReader;
-import it.geosolutions.geoserver.rest.decoder.RESTLayerList;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -26,7 +24,7 @@ public class Layers {
 	public static final String RESTUSER = Play.configuration.getProperty("RESTUSER");
 	public static final String RESTPW   = Play.configuration.getProperty("RESTPW");
 	
-	public static String getLayersGeoserver() throws MalformedURLException {
+/*	public static String getLayersGeoserver() throws MalformedURLException {
 	    GeoServerRESTReader reader = new GeoServerRESTReader(RESTURL, RESTUSER, RESTPW);
 	    RESTLayerList layers = reader.getLayers();
 	    List<String> names = layers.getNames();
@@ -41,7 +39,7 @@ public class Layers {
 	    Logger.info(array.toString());
 		return toReturn;
 	}
-
+*/
 	public static JsonObject getLayers() throws SQLException{
 		JsonObject layers = getJson();
 		JsonObject html = getHTML(layers);
