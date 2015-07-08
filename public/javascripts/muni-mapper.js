@@ -104,7 +104,7 @@ function manageLayer(layername){
 		layers.splice(i,1);
 		}
 	  function mapLayer(layerName){
-		 	var layer = L.tileLayer.wms("http://geoblaster.info:8080/geoserver/cite/wms", {
+		 	var layer = L.tileLayer.wms("http://geoblaster.info:8080/geoserver/geology/wms", {
 		    layers: 'cite:'+layerName,
 		    format: 'image/png',
 		    tiled: 'true',
