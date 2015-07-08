@@ -13,13 +13,13 @@ console.log(zoomLevel);
 console.log(layerNames);
 
 if(startX == 0){
-	startX = -149.9;
+	startX = -108.6;
 } 
 if(startY == 0){
-	startY = 61.15; 
+	startY = 53.85; 
 }
 if(zoomLevel == 0){
-	zoomLevel=11;
+	zoomLevel=4;
 }
 
 map = new L.Map('map', {center: new L.LatLng(startY, startX), zoom: zoomLevel});
