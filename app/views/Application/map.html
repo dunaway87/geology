@@ -99,10 +99,6 @@ $(document).ready(function (){
 	  }
 	 
 	}
-	
-	
-	
-	
 	$('#searchTab').click(function(){
 		$('.searchContainer').slideToggle('fast');
 		$('#layerGroupContainer').slideToggle('slow');
@@ -129,8 +125,6 @@ $.get("/geology/getLayers").done(function(dataSTR){
 	 	   var obj = data[key];
 	 	   
 	 	   var foldersContent = '<ul id = "'+folderName+'" class="folderContent" onMouseOut="folderClick(\''+folderName+'\')" onMouseOver="folderClick(\''+folderName+'\')" style = "display: none; margin-top:'+folderOffset*35+'px">';
-	 	   
-	 	   
 	 	   
  	    for (var prop in obj) { 
 			foldersContent = foldersContent+'<li id="'+obj[prop]+'"class="list-group-item layerItem" style = "background-color:#cccccc; margin-left:40px; cursor:pointer" onMouseOut="$(\'#'+obj[prop]+'\').css(\'font-weight\', \'normal\')" onMouseOver="$(\'#'+obj[prop]+'\').css(\'font-weight\', \'bold\')" onClick="manageLayer(\''+obj[prop]+'\')">'+obj[prop].replace(/_/g,' ')+'</li>';
@@ -288,6 +282,9 @@ $('#ownerSearchButton').click(function(){
 
 });
 
+$(function(){
+	$("#legendsBox").draggable();
+});
 
 function changeAddress(address){
  	var foundIt = false;

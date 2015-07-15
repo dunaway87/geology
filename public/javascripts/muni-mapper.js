@@ -105,7 +105,7 @@ function manageLayer(layername){
 		}
 	  function mapLayer(layerName){
 		 	var layer = L.tileLayer.wms("http://geoblaster.info:8080/geoserver/geology/wms", {
-		    layers: 'cite:'+layerName,
+		    layers: 'geology:'+layerName,
 		    format: 'image/png',
 		    tiled: 'true',
 		    transparent: true,
